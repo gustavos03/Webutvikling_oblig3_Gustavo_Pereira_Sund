@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
-    <title>SHOEDEEALERS</title>
-
+    <title>SHOEDEALERS</title>
 </head>
 <body>
-    
-    <div id="grid-container">
-        <header>
-            <nav>
-                <a href="#" id="logo">SHOEDEALERS</a>
-                <div>
-                    <!-- Ikon for søkefunksjonen -->
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <!-- Ikon for navigasjonsmenyen på små skjermer -->
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                </div>
-                <ul class="navbar">
-                    <!-- Navigasjonsmeny med lenker -->
-                    <li><a href="#">Home</a></li>
-                    <li><a href="/html/produkt.html">Products</a></li>
-                    <li><a href="#services">Services</a></li>
-                </ul>   
-
-            </nav>
-            <section>
-                <a href="tilbud.html" class="black-btn">Les mer</a>
+    <header>
+        <section class="searchbar">
+            <section class="logo">SHOEDEALERS</section> 
+            <section id="searchfield">
+                <i class="fa-solid fa-search"></i>
+                <input type="text"> 
+                
             </section>
-        </header>
-    </div>
+            <section id="icons">
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                <i class="fa-solid fa-burger fa-xl"></i>
+            </section>
+        </section>
+        
+        <nav id="navbar">
+            <a href="index.html">Hjem</a>
+            <a href="produkt.html">Produkter</a>
+            <a href="tilbud.html">Tilbud</a>
+        </nav> 
+    </header>
+    <main>
+        <section class="tilbud">
+            <article class="container">
+                <h1>Tilbud</h1>
+                <img src="https://placehold.co/600x400" alt="placeholder">
+                <p>Her er vores tilbud</p>
+                <a href="tilbud.html">
+                <section class="button">Les mer</section>
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
