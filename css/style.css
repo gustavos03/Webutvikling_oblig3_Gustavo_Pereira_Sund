@@ -9,7 +9,7 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background-color: #ede1e1;
+    background-color: #fff;
     line-height: 1.6;
 }
 
@@ -35,7 +35,6 @@ a{
     font-size: 16px;
     display: flex;
     justify-content: space-between;
-    
     flex-wrap: wrap;
 }
 #navbar *{
@@ -61,10 +60,12 @@ h1, h2{
     line-height: 1.2;
     margin:10px 0;
 }
-img{
-    max-width: 400px;
+ img{
     width: 100%;
-}
+    height: auto;
+    display: block;
+    border-radius: 10px;
+ }
 #navbar{
     color: #fff;
     height: 60px;
@@ -75,9 +76,21 @@ img{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 400px;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #d9d9d9;
+    margin: 10px ;
+}
 
-    padding: 0 20px;
+/* Forslag på kode fra github copilot for å lage  */
+.les-mer-knapp{
+    background-color: #282626;
+    color: #d9d9d9;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 .flex{
@@ -92,8 +105,40 @@ img{
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 0 20px;
-    justify-content: space-evenly;
 }
 
+@media screen and (min-width: 400px){
+    .flex{
+        flex-direction: row;
+    }
+    #tilbud{
+        justify-content: space-between;
+    }
+}
 
+#lenker{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
 
+#lenker *{
+    margin: 5px 0;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
