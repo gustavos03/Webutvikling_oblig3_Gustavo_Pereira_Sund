@@ -4,12 +4,12 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding:0;
 }
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background-color: #ffff;
+    background-color: #515568;
     line-height: 1.6;
 }
 
@@ -19,8 +19,9 @@ ul{
 
 a{
     text-decoration: none;
-    color: #333;
+    color: #000000;
 }
+
 .logo{
     background-color: #632323;
     padding: 10px;
@@ -37,6 +38,7 @@ a{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 #navbar *{
     background-color: #d9d9d9;
     padding: 10px ;
@@ -44,23 +46,41 @@ a{
     min-width: 80px;
     text-align: center;
 }
+
 #icons{
     display: flex;
     align-items: flex-start;
     margin-top: 30px;
     margin-right: 15px;
 }
+
+#icons *{
+    justify-content: space-between;
+}
+
 #logo-searchbar{
     display: flex;
     background-color: #d9d9d9;
     align-items: row;
 }
+
 h1, h2{
     font-weight: 300;
     line-height: 1.2;
     margin:10px 0;
 }
- img{
+
+button{
+    background-color: #282626;
+    padding: 10px;
+    border-radius: 5px;
+    color: #f9f9f9;
+    cursor: pointer;
+}
+h4{
+    size: 0px;
+}
+img{
     width: 100%;
     height: auto;
     display: block;
@@ -88,16 +108,6 @@ h1, h2{
     margin: 10px;
 }
 
-/* Forslag på kode fra github copilot for å lage  */
-.les-mer-knapp{
-    background-color: #282626;
-    color: #d9d9d9;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px 0;
-    cursor: pointer;
-}
-
 .flex{
     display: flex;
     justify-content: center;
@@ -111,6 +121,16 @@ h1, h2{
     margin: 0 auto;
     padding: 0 20px;
     flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+#produkt{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-grow: 1;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 400px){
@@ -169,12 +189,7 @@ main{
     border-radius: 5px;
     color: #f0f0f0;
 }
-
-@media only screen and(min-width: 800px){
-    main{
-        flex-direction: column;
-    }
-    body{
-        background-color: #515568;
-    }
+#brodsmulesti{
+    margin: 10px 10px 10px;
+    color: #000000;
 }
