@@ -19,7 +19,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: #000000;
+    color: #f3f3f3;
 }
 
 .logo{
@@ -40,7 +40,7 @@ a{
 }
 
 #navbar *{
-    background-color: #d9d9d9;
+    background-color: #373131;
     padding: 10px ;
     border-radius: 10px;
     min-width: 80px;
@@ -106,8 +106,9 @@ img{
     max-width: 400px;
     flex-grow: 1;
     padding: 10px;
-    background-color: #d9d9d9;
+    background-color: #7e7777;
     margin: 5px ;
+    border-radius: 10px;
 }
 
 .small-container{
@@ -138,6 +139,10 @@ img{
     padding: 0 20px;
     flex-grow: 1;
     margin-bottom: 10px;
+}
+
+.fab, .fa-brands{
+    color: #171818;
 }
 
 @media screen and (min-width: 400px){
@@ -198,5 +203,12 @@ main{
 }
 #brodsmulesti{
     margin: 10px 10px 10px;
-    color: #000000;
+    color: #d2d2d2;
+}
+
+footer{
+    background-color: #352d5900;
+}
+#outletknapp{
+    margin-top: 100px;
 }
